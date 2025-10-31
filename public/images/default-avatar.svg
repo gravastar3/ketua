@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="#f4a6c1"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="90" fill="#f8d7e3"/>
+  
+  <!-- Avatar Icon -->
+  <circle cx="100" cy="70" r="25" fill="#ffffff"/>
+  <path d="M60 140 Q100 110 140 140 Q140 160 100 170 Q60 160 60 140" fill="#ffffff"/>
+  
+  <!-- Camera Icon -->
+  <rect x="75" y="75" width="50" height="35" rx="5" fill="#e8d5f2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="100" cy="92" r="8" fill="#ffffff"/>
+  <rect x="115" y="85" width="8" height="6" rx="1" fill="#ffffff"/>
+  
+  <!-- Text -->
+  <text x="100" y="190" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    NO PHOTO
+  </text>
+</svg>

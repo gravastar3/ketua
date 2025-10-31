@@ -1,0 +1,4 @@
+# Placeholder for default avatar image
+# This file should be replaced with an actual image file
+# Recommended size: 200x200px
+# Format: PNG or JPG with transparent background preferred

@@ -1,0 +1,312 @@
+{
+  "produk": [
+    {
+      "nama": "Cleanser",
+      "bahan": "Surfaktan ringan",
+      "fungsi": "Pembersihan",
+      "frekuensi": "2x/hari",
+      "jenisKulit": ["normal", "berminyak", "kering", "sensitif", "kombinasi"]
+    },
+    {
+      "nama": "Toner",
+      "bahan": "Hyaluronic Acid, Niacinamide",
+      "fungsi": "Hidrasi dan pH balance",
+      "frekuensi": "2x/hari",
+      "jenisKulit": ["normal", "berminyak", "kering", "sensitif", "kombinasi"]
+    },
+    {
+      "nama": "Vitamin C",
+      "bahan": "Ascorbic Acid",
+      "fungsi": "Antioksidan, brightening",
+      "frekuensi": "1x/hari",
+      "jenisKulit": ["normal", "kering", "kombinasi"]
+    },
+    {
+      "nama": "Niacinamide",
+      "bahan": "Niacinamide 10%",
+      "fungsi": "Mengontrol minyak, pori-pori",
+      "frekuensi": "1x/hari",
+      "jenisKulit": ["berminyak", "kombinasi"]
+    },
+    {
+      "nama": "Retinol",
+      "bahan": "Retinol 0.5%",
+      "fungsi": "Anti-aging, sel kulit mati",
+      "frekuensi": "1x/hari",
+      "jenisKulit": ["normal", "kering", "kombinasi"]
+    },
+    {
+      "nama": "AHA/BHA",
+      "bahan": "Glycolic Acid, Salicylic Acid",
+      "fungsi": "Eksfoliasi kimia",
+      "frekuensi": "2x/minggu",
+      "jenisKulit": ["berminyak", "kombinasi"]
+    },
+    {
+      "nama": "Moisturizer",
+      "bahan": "Ceramides, Peptides",
+      "fungsi": "Melembapkan, barrier kulit",
+      "frekuensi": "2x/hari",
+      "jenisKulit": ["normal", "kering", "sensitif", "kombinasi"]
+    },
+    {
+      "nama": "Sunscreen",
+      "bahan": "Zinc Oxide, Titanium Dioxide",
+      "fungsi": "Perlindungan UV",
+      "frekuensi": "1x/hari",
+      "jenisKulit": ["normal", "berminyak", "kering", "sensitif", "kombinasi"]
+    },
+    {
+      "nama": "Clay Mask",
+      "bahan": "Kaolin, Bentonite",
+      "fungsi": "Menyerap minyak berlebih",
+      "frekuensi": "1x/minggu",
+      "jenisKulit": ["berminyak", "kombinasi"]
+    },
+    {
+      "nama": "Hydrating Mask",
+      "bahan": "Hyaluronic Acid, Glycerin",
+      "fungsi": "Hidrasi intensif",
+      "frekuensi": "1x/minggu",
+      "jenisKulit": ["kering", "sensitif"]
+    }
+  ],
+  "konflik": [
+    {
+      "produkA": "Vitamin C",
+      "produkB": "Retinol",
+      "tingkat": "Tinggi",
+      "alasan": "pH berbeda, mengurangi efektivitas"
+    },
+    {
+      "produkA": "Vitamin C",
+      "produkB": "AHA/BHA",
+      "tingkat": "Sedang",
+      "alasan": "Iritasi potensial"
+    },
+    {
+      "produkA": "Retinol",
+      "produkB": "AHA/BHA",
+      "tingkat": "Tinggi",
+      "alasan": "Iritasi berat, barrier rusak"
+    },
+    {
+      "produkA": "Retinol",
+      "produkB": "Clay Mask",
+      "tingkat": "Sedang",
+      "alasan": "Kering berlebihan"
+    },
+    {
+      "produkA": "AHA/BHA",
+      "produkB": "Clay Mask",
+      "tingkat": "Sedang",
+      "alasan": "Iritasi berlebihan"
+    },
+    {
+      "produkA": "Niacinamide",
+      "produkB": "Vitamin C",
+      "tingkat": "Rendah",
+      "alasan": "Potensi iritasi ringan"
+    }
+  ],
+  "graf": {
+    "vertices": ["Cleanser", "Toner", "Vitamin C", "Niacinamide", "Retinol", "AHA/BHA", "Moisturizer", "Sunscreen", "Clay Mask", "Hydrating Mask"],
+    "edges": [
+      ["Vitamin C", "Retinol"],
+      ["Vitamin C", "AHA/BHA"],
+      ["Vitamin C", "Niacinamide"],
+      ["Retinol", "AHA/BHA"],
+      ["Retinol", "Clay Mask"],
+      ["AHA/BHA", "Clay Mask"]
+    ]
+  },
+  "jadwal": {
+    "normal": {
+      "senin": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Vitamin C", "Moisturizer"]
+      },
+      "selasa": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "rabu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Retinol", "Moisturizer"]
+      },
+      "kamis": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "jumat": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Vitamin C", "Moisturizer"]
+      },
+      "sabtu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Retinol", "Moisturizer"]
+      },
+      "minggu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Hydrating Mask", "Moisturizer"]
+      }
+    },
+    "berminyak": {
+      "senin": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Niacinamide", "Moisturizer"]
+      },
+      "selasa": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "rabu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "AHA/BHA", "Moisturizer"]
+      },
+      "kamis": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "jumat": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "sabtu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Clay Mask", "Moisturizer"]
+      },
+      "minggu": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      }
+    },
+    "kering": {
+      "senin": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Vitamin C", "Moisturizer"]
+      },
+      "selasa": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "rabu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Retinol", "Moisturizer"]
+      },
+      "kamis": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "jumat": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Vitamin C", "Moisturizer"]
+      },
+      "sabtu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Retinol", "Moisturizer"]
+      },
+      "minggu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Hydrating Mask", "Moisturizer"]
+      }
+    },
+    "sensitif": {
+      "senin": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "selasa": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "rabu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Hydrating Mask", "Moisturizer"]
+      },
+      "kamis": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "jumat": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "sabtu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Hydrating Mask", "Moisturizer"]
+      },
+      "minggu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      }
+    },
+    "kombinasi": {
+      "senin": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Vitamin C", "Moisturizer"]
+      },
+      "selasa": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "rabu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Retinol", "Moisturizer"]
+      },
+      "kamis": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Moisturizer"]
+      },
+      "jumat": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "AHA/BHA", "Moisturizer"]
+      },
+      "sabtu": {
+        "pagi": ["Cleanser", "Toner", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Clay Mask", "Moisturizer"]
+      },
+      "minggu": {
+        "pagi": ["Cleanser", "Toner", "Niacinamide", "Moisturizer", "Sunscreen"],
+        "malam": ["Cleanser", "Toner", "Hydrating Mask", "Moisturizer"]
+      }
+    }
+  },
+  "efisiensi": [
+    {
+      "jenis": "Normal",
+      "|V|": 10,
+      "|E|": 6,
+      "χ": 6,
+      "waktu": 2.3
+    },
+    {
+      "jenis": "Berminyak",
+      "|V|": 9,
+      "|E|": 7,
+      "χ": 5,
+      "waktu": 2.1
+    },
+    {
+      "jenis": "Kering",
+      "|V|": 11,
+      "|E|": 5,
+      "χ": 5,
+      "waktu": 2.5
+    },
+    {
+      "jenis": "Sensitif",
+      "|V|": 7,
+      "|E|": 3,
+      "χ": 4,
+      "waktu": 1.8
+    },
+    {
+      "jenis": "Kombinasi",
+      "|V|": 12,
+      "|E|": 8,
+      "χ": 6,
+      "waktu": 2.7
+    }
+  ]
+}

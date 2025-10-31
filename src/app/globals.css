@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans), 'Inter', sans-serif;
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #fef7f0;
+  --foreground: #5d4a3c;
+  --card: #ffffff;
+  --card-foreground: #5d4a3c;
+  --popover: #ffffff;
+  --popover-foreground: #5d4a3c;
+  --primary: #f4a6c1;
+  --primary-foreground: #ffffff;
+  --secondary: #e8d5f2;
+  --secondary-foreground: #5d4a3c;
+  --muted: #f5f0ff;
+  --muted-foreground: #8b7a9b;
+  --accent: #b8e6f7;
+  --accent-foreground: #5d4a3c;
+  --destructive: #ff6b8b;
+  --border: #f0e6d8;
+  --input: #f0e6d8;
+  --ring: #f4a6c1;
+  --chart-1: #f4a6c1;
+  --chart-2: #e8d5f2;
+  --chart-3: #b8e6f7;
+  --chart-4: #ffd4e5;
+  --chart-5: #c8f7e5;
+  --sidebar: #fef7f0;
+  --sidebar-foreground: #5d4a3c;
+  --sidebar-primary: #f4a6c1;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8d5f2;
+  --sidebar-accent-foreground: #5d4a3c;
+  --sidebar-border: #f0e6d8;
+  --sidebar-ring: #f4a6c1;
+}
+
+.dark {
+  --background: #2d2426;
+  --foreground: #f5e6d8;
+  --card: #3d2f33;
+  --card-foreground: #f5e6d8;
+  --popover: #3d2f33;
+  --popover-foreground: #f5e6d8;
+  --primary: #d4889e;
+  --primary-foreground: #ffffff;
+  --secondary: #8b6f9e;
+  --secondary-foreground: #f5e6d8;
+  --muted: #4a3f4a;
+  --muted-foreground: #b8a8c0;
+  --accent: #6a9fb8;
+  --accent-foreground: #f5e6d8;
+  --destructive: #ff6b8b;
+  --border: #4a3f4a;
+  --input: #4a3f4a;
+  --ring: #d4889e;
+  --chart-1: #d4889e;
+  --chart-2: #8b6f9e;
+  --chart-3: #6a9fb8;
+  --chart-4: #e8a8c0;
+  --chart-5: #8bc8b0;
+  --sidebar: #2d2426;
+  --sidebar-foreground: #f5e6d8;
+  --sidebar-primary: #d4889e;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #8b6f9e;
+  --sidebar-accent-foreground: #f5e6d8;
+  --sidebar-border: #4a3f4a;
+  --sidebar-ring: #d4889e;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+.skincare-gradient {
+  background: linear-gradient(135deg, #f4a6c1 0%, #e8d5f2 25%, #b8e6f7 50%, #ffd4e5 75%, #c8f7e5 100%);
+}
+
+.pastel-pink {
+  background-color: #f4a6c1;
+}
+
+.pastel-purple {
+  background-color: #e8d5f2;
+}
+
+.pastel-blue {
+  background-color: #b8e6f7;
+}
+
+.pastel-mint {
+  background-color: #c8f7e5;
+}
+
+.pastel-peach {
+  background-color: #ffd4e5;
+}
